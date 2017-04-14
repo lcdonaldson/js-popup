@@ -1,0 +1,15 @@
+.overlay {
+  -webkit-box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+  box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+}
+#popup-wrapper {
+  min-width: 60rem;
+  min-height: 25rem;
+}
+.lt_cell {
+  background-image: url('images/fish.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 9rem;
+  min-width: 9rem;
+}
