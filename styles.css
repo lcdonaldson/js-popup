@@ -3,8 +3,12 @@
   box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
 }
 #popup-wrapper {
-  min-width: 60rem;
+  /*min-width: 30rem;*/
   min-height: 25rem;
+  margin-bottom: -4000px;
+}
+.slide_up {
+  margin-bottom: 0px!important;
 }
 .lt_cell {
   background-image: url('images/fish.png');
@@ -12,4 +16,9 @@
   background-repeat: no-repeat;
   min-height: 9rem;
   min-width: 9rem;
+}
+@media (min-width: 320px) and (max-width: 568px) {
+  .lt_cell {
+    display: none;
+  }
 }
