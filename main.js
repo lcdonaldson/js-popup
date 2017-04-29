@@ -13,7 +13,7 @@ $(document).ready(function () {
     setTimeout(openPopup, 2000);
   });
   
-  $('.exit').on('click', function () {
+  $('.exit').click(function () {
     console.log('exit works');
     $('#popup-wrapper').hide();
   });
