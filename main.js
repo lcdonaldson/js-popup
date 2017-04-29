@@ -11,9 +11,10 @@ $(document).ready(function () {
   $( window ).on( "load", function() {
     setTimeout(overlay, 1000);
     setTimeout(openPopup, 2000);
+    console.log('popup works');
   });
   
-  $('.exit').click(function () {
+  $('a').click(function () {
     console.log('exit works');
     $('#popup-wrapper').hide();
   });
