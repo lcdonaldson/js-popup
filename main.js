@@ -8,10 +8,9 @@ $(document).ready(function () {
     $('#popup-wrapper').addClass('slide_up');
   };
   
-  $('#exit').on("click", function () {
-    console.log('works');
-    $('#popup-wrapper').addClass('hide');
-  });
+  function exit() {
+    document.getElementById("popup-wrapper")this.setAttribute("class", "remove");
+  };
   
   $( window ).on( "load", function() {
     console.log('popup works');
