@@ -9,14 +9,15 @@ $(document).ready(function () {
   }
   
   $( window ).on( "load", function() {
+    console.log('popup works');
     setTimeout(overlay, 1000);
     setTimeout(openPopup, 2000);
-    console.log('popup works');
+    
   });
   
-  $('a').click(function () {
-    console.log('exit works');
-    $('#popup-wrapper').hide();
+  $('.exit').on("click", function () {
+    console.log('works');
+    $('#popup-wrapper').addClass('remove');
   });
 
 });
