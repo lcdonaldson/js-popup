@@ -15,9 +15,9 @@ $(document).ready(function () {
     
   });
   
-  $('.exit').on("click", function () {
+  $('#exit').on("click", function () {
     console.log('works');
-    $('#popup-wrapper').addClass('remove');
+    $('#popup-wrapper').addClass('hide');
   });
 
 });
