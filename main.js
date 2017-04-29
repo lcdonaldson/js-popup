@@ -1,4 +1,10 @@
 $(document).ready(function () {
+  
+  $( window ).on( "load", function() {
+    setTimeout(overlay, 1000);
+    setTimeout(openPopup, 2000);
+  });
+  
   function overlay () {
     $('.overlay').removeClass('hide');
   }
@@ -6,10 +12,9 @@ $(document).ready(function () {
   function openPopup() {
     $('#popup-wrapper').addClass('slide_up');
   }
-
-  $( window ).on( "load", function() {
-    setTimeout(overlay, 1000);
-    setTimeout(openPopup, 2000);
+  
+  $('.exit').on('click', function () {
+    $('#popup-wrapper').remove();
   });
 
 });
