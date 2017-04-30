@@ -11,7 +11,7 @@ $(document).ready(function () {
   $( window ).on( "load", function() {
     console.log('popup works');
     setTimeout(overlay, 1000);
-    setTimeout(openPopup, 2000);
+    setTimeout(openPopup, 1400);
   });
   
   $('#exit').on('click', function () {
